@@ -14,6 +14,10 @@ public class PhoneNumber {
         return areaCode;
     }
 
+    public int getNumber() {
+        return number;
+    }
+
     public static PhoneNumber of(int areaCode, int number) {
         CheckUtils.checkAgrument(areaCode > 100);
         CheckUtils.checkAgrument(number > 1000);
